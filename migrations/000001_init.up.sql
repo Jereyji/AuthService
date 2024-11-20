@@ -1,0 +1,16 @@
+CREATE TABLE users (
+    id UUID PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    hash_password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE session (
+    id UUID PRIMARY KEY,
+    user_id UUID NOT NULL REFERENCES users (id) ON DELETE CASCADE,
+    refresh_token UUID NOT NULL,
+    fingerprint VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    expired_at TIMESTAMP NOT NULL
+);
