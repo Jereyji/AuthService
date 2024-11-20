@@ -1,11 +1,10 @@
-﻿
-namespace Domain.Entity;
+﻿namespace Domain.Entity;
 
 public class UserEntity
 {
-    public Guid ID { get; set; }
+    public Guid ID { get; private set; }
     public string Name { get; set; }
-    public string HashPassword { get; set; }
+    public string HashPassword { get; private set; }
 
     public UserEntity(in string name, in string password)
     {
