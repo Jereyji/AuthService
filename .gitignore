@@ -1,4 +1,5 @@
 bin/
 obj/
 
+.env
 packages-microsoft-prod.deb
