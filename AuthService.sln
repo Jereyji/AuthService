@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "refresh_token", "internal\d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "session", "internal\domain\entity\session\session.csproj", "{E7DE95F0-828A-444A-82AE-8946432DC267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "access_token", "internal\domain\entity\access_token\access_token.csproj", "{BD1B33DC-AC8E-4E63-A5F8-65857FC7B660}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "access_token", "internal\domain\value_object\access_token\access_token.csproj", "{BD1B33DC-AC8E-4E63-A5F8-65857FC7B660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
